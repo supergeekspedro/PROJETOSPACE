@@ -63,7 +63,7 @@ function App() {
     }
 
     async function obterNoticiasNasa() {
-        const nasaURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=DEMO_KEY"
+        const nasaURL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=${process.env.REACT_APP_API_KEY}`
         await fetch(nasaURL)
         .then(function(resposta) {
             return resposta.json()
