@@ -2,6 +2,11 @@
 
 O 👩‍🚀 Projeto Space é uma plataforma que consiste em trazer notícias de forma organizada em uma interface agradável.
 
+## 🤠 INTEGRANTES
+
+* PEDRO AUGUSTO DOS SANTOS
+* CLAUDINEI DONIZETE DE ASSIS JUNIOR
+
 ## 📌 NOTÍCIAS
 
 Todas as notícias são buscadas em meio de informação seguras e confiável! Obtemos através da API SPACEFLIGHTNOW e API NASA, disponibilizada publicamente para interessados em astronomia e atualizações sobre exploração espacial.  
