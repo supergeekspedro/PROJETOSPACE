@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --bg: #2b2e4a;
+    --ft-primary: #f14668;
+    --ft-secondary: #e2703a; 
+    --ft-tertiary: #c5d7bd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*, input, button {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    background-color: var(--bg);
+    margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    div.App {
+        text-align: center;
+    }
 
-.App-link {
-  color: #61dafb;
-}
+    div.AppTitle {
+        color: var(--ft-primary);
+        font-size: 32pt;
+        font-weight: 700;
+        padding: 2vh 0;
+        text-align: center;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    div.AppContent {
+        display: grid;
+        gap: 2vh;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 400px;
+        margin: 4vh auto;
+        width: 80vw;
+    }
+
+        div.Noticia {
+            border: 1px solid var(--ft-primary);
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: min-content 1fr;
+            margin: 2vh 0;
+            padding: 16px;
+        }
+
+        div.Imagens {
+            border: 1px solid var(--ft-primary);
+            display: grid;
+            justify-content: center;
+            margin: 2vh 0;
+        }
+
+            div.Imagens img {
+                width: 100%;
+            }
+
+        div.NoticiaModeloDados {
+            margin: 0 2vw;
+        }
+
+        div.NoticiaTitulo {
+            margin: 2vh 0;
+        }
+
+        div.NoticiaTitulo a {
+            color: var(--ft-primary);
+            font-size: 24pt;
+            font-weight: 700;
+        }
+
+        div.NoticiaResumo {
+            color: var(--ft-secondary);
+            font-size: 16pt;
+            text-align: justify;
+        }
+
+        div.NoticiaFonte {
+            color: var(--ft-tertiary);
+            font-size: 20pt;
+            padding: 2vh 0;
+        }
+
+        div.NoticiaData {
+            color: var(--ft-tertiary);
+            font-size: 16pt;
+            text-align: right;
+        }
